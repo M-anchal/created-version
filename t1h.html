@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<!--html boiler plate means html document-->
+<html lang="en">
+<!--tag should be open or close give attribute lan means language english-->
+
+<head>
+    <!--head contains meta tags-->
+    <meta charset="UTF-8">
+    <!--meta tag means gives imf obout imf char set utf 8 is encoding is utf 8-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--when we want to link external sheet which is also linked in head tag-->
+    <!-- meta tag use in seo (search engine optimisation ) work to increase a web trafic -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- for incourage a resposive website -->
+    <title>this is a title</title>
+
+    <!-- how add external css -->
+    <link rel="stylesheet" href="t1c.css">
+
+    <!-- external javascript add -->
+    <script src="t1j.js"></script>
+
+</head>
+<!-- there is a shortcut for comment -->
+
+<body>
+    <!--body contains the content of web page-->
+    <!-- heading tag in html h1 is largest h1 to h6 -->
+    <h1>anchal website</h1>
+    <!-- there is a paragraph tags use for paragraph when u write in paragraph tag lorem4 and press enter it provide 4 words -->
+    <p>Lorem ipsum dolor sit.</p>
+    <!-- and u also want 4 paragraph tag so u write p*4 and enter -->
+    <p>first</p>
+    <p>second</p>
+    <p>third</p>
+    <p>fourth</p>
+    <!-- strong and ephasis tag -->
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, cumque similique amet commodi <strong> hello
+            anchal</strong> temporibus quaerat corrupti doloribus enim minima animi! Delectus, deleniti fugit ut dolore
+        fugiat <em>what about u emphasised</em> nostrum nulla tenetur, quidem labore, facilis voluptatem nesciunt!</p>
+
+
+    <!-- html ignore the extra spaces so for space u can use br tag  it is self closing but its not a good practice we use in css new style -->
+    <!-- next tag is hr tag its use for create a horizontal line it is also selfclosing   -->
+
+    <!-- bold and etalic tag also in html -->
+    <p>Lorem ipsum dolor,<br> sit amet <b> hello anchal </b> consectetur adipi <i> prgrammer italic</i> sicing elit.</p>
+
+    <hr>
+
+    <!-- in first line to u want to go second line press ctrl+enter -->
+
+    <!-- links and images -->
+    <!-- anchor tag contains the link and text contains -->
+    <a href="https://google.com">go to google</a>
+    <br>
+    <a href="https://facebook.com">go to facebook</a>
+    <!-- but we want to that site open in new tab for this we add a attribute target -->
+    <br>
+    <a href="https://google.com" target="_blank">go to google</a>
+    <br>
+    <a href="https://facebook.com" target="_blank">go to facebook</a>
+
+    <!-- link with internal page -->
+    <a href="t2j.html" target="_blank">t2.html</a>
+    <br>
+
+
+
+
+    <!-- images link  img tag there is a alt text when image is not persent  unsplash source image link-->
+    <!-- <img src="https://media.istockphoto.com/photos/honeybee-on-calendula-flower-picture-id1345476161?s=612x612" alt="errror loading"> -->
+
+    <!-- html list and tables -->
+    <!-- there is a two type of list first is ordered list second is unordered list ul tag provide bullets and ol tag provides us numbering there is a list tag use for listing -->
+    <ul>
+        <li>my name is anchal</li>
+        <li>i m btech student </li>
+        <li>i want to be a software engineer</li>
+    </ul>
+
+    <ol>
+        <li>my name is anchal</li>
+        <li>i m btech student </li>
+        <li>i want to be a software engineer</li>
+    </ol>
+    <!-- when u provide a type in ol or in ul  -->
+    <ol type="A">
+        <li>my name is anchal</li>
+        <li>i m btech student </li>
+        <li>i want to be a software engineer</li>
+    </ol>
+
+    <ul type="square">
+        <li>my name is anchal</li>
+        <li>i m btech student </li>
+        <li>i want to be a software engineer</li>
+    </ul>
+
+
+    <!-- table table contains two things table head tag and table body tag table row tag -->
+
+    <h1>HTML TABLE</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Class</th>
+                <th>Roll no</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>anchal</td>
+                <td>nursery </td>
+                <td> 20205032</td>
+            </tr>
+            <tr>
+                <td>kajal</td>
+                <td>nursery </td>
+                <td> 20205032</td>
+            </tr>
+            <tr>
+                <td>rohan</td>
+                <td>nursery </td>
+                <td> 20205032</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- form tutorial      -->
+    <h2>form making</h2>
+    <form action="backend.php"><!-- action means that form submit by user in backend.php-->
+        <label for="name">Name</label>
+        <div>
+     <input type="text" name="Myname" id="name"><!--backend recongnise the name value-->
+     </div>
+     <br>
+     <div>
+        Role:<input type="text" name="myrole">
+     </div>
+     <br>
+     <div>
+        Email:<input type="email" name="myemail" id="">
+     </div>
+     <br>
+     <br>
+     <div>
+         Date:<input type="date" name="mydate" id="">
+        </div>
+        <div>
+            Bonus:<input type="number" name="mybonus" id="">
+        </div>
+        <div>
+            Are you eligible?:<input  type="checkbox" name="my eligibility">
+        </div>
+        <div>
+            Gender:male<input  type="radio" name="mygender">
+            female<input  type="radio" name="mygender">
+            others<input  type="radio" name="mygender">
+        </div>
+        <div>
+            write about yourself:<br><textarea name="mytext" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <label for="car">Car</label>
+            <select name="Mycar" id="car">
+                <option value="indica" selected>indica</option>
+                <option value="swift">swift</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="submit now"> <input type="reset" value="submit now">
+        </div>
+
+    </form>
+    <!-- INLINe and block elements  -->
+    <!-- paragarph block,span inline,anker tag inline
+    -->
+
+    <!--id or classes-->
+    <!--
+ div main id or classes de toh,div is block element so it create a box for which element in it id like name use as identifier which is unique
+ element as a class when u give the same property of 100 element so give a same class 
+
+    -->
+
+    <!-- emmet 
+    span.redbg press enter has class for span#spanid enter make id-->
+    <!-- .blackground with div class gives,ctrl+/ comment -->
+    <!--  -->
+
+
+    <!-- HtMl entities, use for print symbol -->
+    <details>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti illum inventore aperiam impedit suscipit ut odio! Placeat, aspernatur, voluptatum ullam vero iusto pariatur repellat, harum vel quidem quasi vitae voluptatem.
+        Quaerat tempore eaque doloribus, explicabo natus amet voluptas exercitationem dolorum modi ducimus tenetur totam omnis consequuntur animi vitae possimus repellat in dolore ad officiis delectus quae non commodi. Praesentium, commodi?
+        Cupiditate asperiores laudantium officia. Porro repudiandae recusandae nobis aperiam natus adipisci totam, rerum dolore corrupti molestias labore nostrum maxime repellendus neque cumque facilis sit, praesentium dolorem quia quod minus similique.
+        Beatae praesentium ullam obcaecati vitae odio perferendis dolor illo. Autem quis in, nulla quam a aliquam nihil, eos distinctio eaque illo, est optio quo. Exercitationem eius omnis rerum aspernatur! Optio.
+        Repudiandae, reiciendis aliquam. Tenetur cum alias a sint amet assumenda dolor temporibus, atque non. Ducimus in voluptas ipsa perspiciatis nihil consectetur officia. Vero dolor impedit repudiandae iusto tempora quod laborum.
+        Eaque, mollitia voluptatibus ullam, velit sit dolorum magnam maxime natus dolores laborum perferendis id odio dignissimos fuga pariatur! Commodi a quos laboriosam iste ratione sequi nisi est aperiam obcaecati quod!
+        Vel debitis autem ad animi corporis doloremque, eum tempora necessitatibus! Odio quos, earum culpa adipisci, laboriosam aut eos distinctio ratione molestiae quo qui! Nostrum inventore dicta, sequi earum incidunt consequuntur?
+        Expedita, unde. Itaque fuga eos dolor quasi vero asperiores molestias mollitia? Itaque reiciendis ea enim recusandae cumque doloribus, eveniet blanditiis explicabo expedita quae sequi eligendi molestias beatae, nam quo rem.
+        Numquam, odio. Consectetur, incidunt dolore? Eligendi assumenda architecto cumque, dolor placeat dolorem id maiores eaque, reprehenderit omnis, aliquid amet. Ut totam corporis sapiente dolorum esse expedita officiis exercitationem dicta ipsam?
+        Ipsa explicabo cupiditate, optio nam reprehenderit culpa eius. Inventore mollitia ut sint doloribus animi quam sapiente nihil laudantium! Ipsum eos nemo cupiditate adipisci ut repellendus earum, impedit recusandae temporibus nulla.
+        Eius quas omnis reprehenderit commodi possimus nihil reiciendis. Ratione omnis numquam cumque reiciendis pariatur, illum maiores dignissimos optio perferendis officiis quaerat, eius, voluptatibus eos culpa quis porro illo eligendi! Ratione.
+        Facere nam exercitationem cumque placeat eos rem saepe? Laborum deleniti nemo, libero similique necessitatibus repellendus praesentium reiciendis ad minus soluta vero impedit est inventore in voluptatum odio beatae quasi nulla!
+        Reprehenderit quidem, debitis, rerum porro nobis commodi modi dicta laborum dolor est quaerat totam, error aspernatur? Deserunt, deleniti incidunt aperiam saepe distinctio exercitationem quis voluptatem eaque? Ad odit illo voluptatem.
+        Officia suscipit quod voluptatum in illo! Itaque suscipit rerum similique, ipsum iure est qui quaerat exercitationem incidunt molestias cum quo voluptate amet ipsa quis ratione vero aut odio, quasi ullam.
+        Architecto rem cumque nihil earum nisi vero sapiente, blanditiis in assumenda nobis optio dignissimos placeat nostrum amet at ab esse ipsum nemo obcaecati animi maxime minima tempora repellat consectetur. Quaerat?
+        Voluptates ullam qui molestias minima adipisci quos quis expedita, tenetur harum at explicabo? Neque, atque, officiis aut vel necessitatibus cupiditate explicabo delectus adipisci consequatur quibusdam numquam libero placeat molestias soluta?
+        Perspiciatis exercitationem animi, nemo illo unde nisi minus laboriosam, ut magnam sint commodi adipisci in nostrum reprehenderit asperiores voluptatum labore quos magni nulla amet qui quisquam! Voluptatum cupiditate incidunt quisquam.
+        Veniam quas dolores iste incidunt eos ipsum et fuga? Eligendi quam animi excepturi repellat magni est blanditiis quos saepe, velit beatae, reiciendis consequatur illum ratione vel, distinctio officia aut a.
+        Fugit ipsa explicabo nihil esse laudantium soluta deleniti magnam facilis cum aperiam tenetur architecto repellat, labore error voluptates tempore totam quaerat, delectus enim veniam quam iure? Autem necessitatibus repudiandae incidunt.
+        Doloribus assumenda debitis nihil totam omnis animi mollitia eaque fuga dolores. Facilis aut consectetur eaque voluptates doloribus ad, magni dicta sit architecto odit nostrum possimus quis corporis alias nemo cum.
+    </details>
+
+</body>
+
+</html>

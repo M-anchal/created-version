@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--  -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css doc</title>
+    <link rel="stylesheet" href="t1c.css">
+<style>
+    p{
+        border: 2px solid royalblue; ;
+    }
+    p{
+        color:red;
+        /* this is a element selector for change a colour a particular id makes for that element */
+         /* it gives a periority,internal css to inline css so dont change the property */
+         background-color:palevioletred  ;
+         /* when u want a give precedence write !important */
+    }
+    .bgblue{
+        background-color: darkblue;
+    }
+    #redelement{
+        color:aqua;
+        background-color: paleturquoise;
+        /* when we use dot then it repersent a class */
+    }
+    .bgblue{
+        background-color: darkblue;
+        color: #000;
+    }
+    #second{
+        color: darkgrey;
+        background-color: darkmagenta;
+    }
+    footer,span{
+        background-color: chartreuse;
+        /* grouping selector */
+    }
+    #chrome{
+    color:blue;
+    background-color:rgb(153, 51, 51) ;
+    font: italic;
+  }
+
+    </style>
+
+</head>
+
+<body>
+    
+    <h3>this is css tutorial</h3>
+      <!-- <p style="color:red;background-color: yellow;">this tutorial is about css</p> -->
+     <p>this is all about css</p>
+        <!-- inline css -->
+        <p class="bgblue">this is a simple paragraph to demonstrate css selector</p>
+        <p>this is css selector tutorial</p>
+        <p>devloper tool</p>
+        <p id="chrome"> this paragraph for chrome develop</p>
+        <div>
+            <p id="redelement" class="redclass, bgblue">this is div paragraph</p>
+            <p id="second">another para graph of div</p>
+            <span>this is span</span>
+            
+
+
+        </div>
+        <footer>this is footer </footer>
+
+<!--<p>helllo </p>-->
+<!-- css selector are used to find the element whose property will be set   p{color:blue;}  p is a selector color is a property and blue is a value css has a 4 selector first is css element and cs id css class or the css grouping selector
+ selector are used to target element ,selector make it easy for us to easily target the element
+1.css element  -->
+    
+</body>
+</html>

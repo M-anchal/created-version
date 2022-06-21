@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <p>
+                this is a row in this container
+            </p>
+        </div>
+    </div>
+    <script>
+        console.log('hello world');</textarea> 
+        var a = 78;
+        var b = "anchal";//dynamic typing where u need not to be define the type of var
+        c = 5.67
+        console.log(c);
+        //operators in java scirpt
+        //operators are two type 1.unary operator
+        //2.binary operator 
+        // in 3+4 ,+ is operator and 3,4 are operands
+        //example
+        c = -c;
+        console.log(c);
+        //example 2
+        c = 44 + 3;
+        console.log(c);
+        //operand=entities on which operators operates
+        var num1 = 2;
+        var num2 = 3;
+        console.log("the value of num1+num2 is" + (num1 + num2));
+        //+ sign use for adding a string contactiation operators
+        console.log("the value of num1-num2 is" + (num1 - num2));
+        console.log("the value of num1/num2 is" + (num1 / num2));
+        console.log("the value of num1*num2 is" + (num1 * num2));
+        console.log("the value of num1**num2 is" + (num1 ** num2));//its num1 to the power num2
+        console.log("the value of num1++ is" + (num1++));
+        console.log(num1)
+        console.log("the value of num1-- is" + (num1--));
+        console.log(num1)
+        //strings and method
+        var string = 'this';
+        console.log(string);
+        string = "this";
+        console.log(string);
+        string = 'thi"s';
+        console.log(string);
+        string = "thi's";
+        console.log(string);
+        var name = 'anchal';
+        var channel = 'anchalprogrammer';
+        var message = 'anchal got a internship';
+        console.log(string + name + message);
+        var temp = `${name} is a nice 'person' and she is a "channel"called ${channel}`;//backtash we can easily use single and double code $name use then it behave like fill in the blanks type.
+        console.log(temp);
+        //for calculating the length of string ;
+        var len = name.length;
+        console.log(`length of the name is ${len}`);
+        //escape sequence character
+        console.log("hello entities\n anchal\tand\b or notthing \\n ");
+        //string make by constructor
+        //var y = new string("this");
+        //console.log(y);
+        //string function
+        var str = "this is a string";
+        console.log(str);
+        var position = str.indexOf('is');//function index of gives a index of when first occurence of is get
+        console.log(position);
+        position = str.lastIndexOf('is');//function index of gives a index of when last occurence of is get
+        console.log(position);
+        //substring from a string
+        var substr = str.slice(1, 6);//1 to 5 tk indexes print
+        console.log(substr);
+        var substr = str.slice(1, 7)
+        console.log(substr);
+        //2.next method for slicing substring method
+        var substr = str.substring(1, 7);//substring doesnot take - values but slice do
+        console.log(substr);
+        //3.method substr
+        var substr1 = str.substr(1, 3);//extract 1to 7
+        console.log(substr1);
+        //if u want a replace substring
+        var rep = str.replace('string', 'anchal');
+        console.log(str);
+        console.log(rep);
+        //5.upper case and lower case in string
+        console.log(str.toUpperCase());
+        console.log(str.toLowerCase());
+        //6.it has also a concating function
+        var newstring = str.concat('New string');
+        console.log(newstring);
+        //7.trim function remove the white spaces only from beg and end
+        var ws = "   hii   how are u    ";
+        console.log(ws);
+        console.log(ws.trim());
+        //8.for character extracting
+        var char2 = str.charAt(2);
+        console.log(char2);
+        var char2 = str.charCodeAt(2);//giving the code of that place
+        console.log(char2);
+        //8 slicing
+        console.log(str[3]);
+        //new topic scope and conditional
+        var string1 = "this is a string";
+        var string1 = "this is a string 2";
+        console.log(string1);
+        //we forget about that we declare a variable earlier var scope is global but we have a let which scope is block
+        let s = "u";
+        {
+            let s = "u3";
+            console.log(s);//here prints a u3
+        }
+        console.log(s);//but here prints u
+        //const
+        const x = "this cant be change";
+        console.log(x);
+        //x="why cant change";
+        //console.log(x);error aayegi
+
+
+        //if else
+        let age = 87;
+        if (age > 18) {
+            console.log("you can give the vote");
+        }
+        else {
+            console.log("u cant");
+        }
+        //switch case
+        const cups = 6;
+        switch (cups) {
+            case 1:
+                console.log("the cups value is 1");
+                break;
+            case 2:
+                console.log("the cups value is 1");
+                break;
+            case 3:
+                console.log("the cups value is 1");
+                break;
+            case 4:
+                console.log("the cups value is 1");
+                break;
+            default:
+                console.log("the cups value is none");
+                break;
+        }
+
+
+
+        //javascript has two types of values primmitive and reference but not going in the deep it has primmitive and which values are not primmitive are called objects
+        let myvar = 34;
+        let myvar1 = 'string';
+        let myvar2 = true;
+        let myvar3 = null;
+        let myvar4 = undefined;
+        let employee = {//this is object
+            Name: "anchal",
+            salary: 100000000,
+            chanel: "anchalwithcode",
+            chanel2:"programm",
+        }
+        console.log(employee);
+        
+//arrays special type object
+let names=[1,7,9,"anchal",undefined];
+console.log(names);
+console.log(names[3]);
+//when u use new array it will be object but the behaviour is same 
+let newname=new Array(89,7,9,"anchal",undefined);
+console.log(newname);
+console.log(newname.length);//gives a length
+newname=newname.sort();//sort 
+console.log(newname);
+newname.push("this is pushed")//its pushed the element in the end
+console.log(newname);
+console.log(employee.chanel);//by this we can acces the channel of employee
+console.log(employee.chanel2);
+console.log(employee['chanel']);//second way of accesing
+//if in employee object we write instead of chanel1 write chanel 1 then first in section of employe you have to write like this "chanel 1" or for accesing u need to use a second method not first if u didnt u get error
+let newname1=new Array(23);
+console.log(newname1);//23 empty spaces created
+
+
+
+    </script>
+
+
+</body>
+
+</html>

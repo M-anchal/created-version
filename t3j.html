@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOOPS</title>
+</head>
+<body>
+    <div class="container">
+   <h4>this is about loops</h4>
+    </div>
+    <script>
+        let frnds=['anchal','riya','anshika','saloni','sansriti'];
+        for (let index = 0; index < frnds.length; index++) {
+            console.log( "hello " +frnds[index]);
+            
+        }
+        // next way for acessing
+        frnds.forEach(function f(element){
+         console.log("hello Frnds to modern javascript " +element)
+        })
+        //for of loop
+        for (element of frnds){
+            console.log("hello frnds, "+element+" to modern javascript")
+        }
+        //we want to iterate object
+        let employee={
+            name:"anchal",
+            salary:10000000,
+            channel:"pwa",
+        }
+        for(key in employee){
+            console.log(`the ${key} of employee is ${employee[key]}`);
+        }
+        //while loop in js 
+
+    </script>
+    
+</body>
+</html>
